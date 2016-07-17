@@ -33,6 +33,9 @@
 ## webpack和react-router实现按需加载
 #### react-router 是一个路由解决方案的第一选择，它本身就有一套动态加载的方案
 https://github.com/reactjs/react-router/blob/master/docs/guides/DynamicRouting.md 
+#### getChildRoutes
+#### getIndexRoute
+#### getComponents
 #### 他们的作用：就是在访问到了对应的路由的时候，才会去执行这个函数，如果没有访问到，那么就不会执行。那么我们把加载的函数放在里面就正好合适了，等到访问了该路由的时候，再去执行函数去加载脚本。
 #### 我现在在pages目录下 新建一个routes.js，该文件就是解决路由问题的；代码可以看如下：
     export default {
