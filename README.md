@@ -71,11 +71,11 @@ http://localhost:8080/webpack-dev-server/a 页面的时候，会加载app.js入�
 文件和b.js模块；
 
 在页面中的index.js如下配置即可：
+
     import React from 'react'
     import { render } from 'react-dom'
     import { browserHistory, Router } from 'react-router'
     import routes from '../routes'
-
     render(<Router history={browserHistory} routes={routes}/>, 
       document.getElementById('root'));
 
